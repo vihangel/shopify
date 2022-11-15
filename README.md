@@ -10,9 +10,12 @@
 <br>
 <h2 align="center">Demo Video 📲</h2>
 <br>
-<p align='center'>
+
+
 <a href="https://clipchamp.com/watch/XCwE7WGTZCZ">https://clipchamp.com/watch/XCwE7WGTZCZ</a>
-</p>
+
+<a href="https://github.com/vihangel/shopify/blob/develop/assets/demo/demo.mp4">Link alternativo -> https://github.com/vihangel/shopify/blob/develop/assets/demo/demo.mp4</a>
+
 <br>
 <h2 align="center">Tecnologias 💻</h2>
 <br>
