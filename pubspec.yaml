@@ -1,0 +1,59 @@
+name: shopify
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+  get_it: ^7.2.0
+  flutter_i18n: ^0.32.4
+  mask_text_input_formatter: ^2.4.0
+  package_info: ^2.0.2
+  flutter_svg: ^1.1.5
+  flutter_spinkit: ^5.1.0
+  logger: ^1.1.0
+  collection: ^1.15.0
+  json_serializable: ^6.5.4 
+  json_annotation: ^4.7.0 
+  intl: ^0.17.0
+  cupertino_icons: ^1.0.2
+  flutter_modular: 
+  dio: ^4.0.6
+  retrofit: ^3.3.1
+  mobx: ^2.1.2
+  flutter_mobx: ^2.0.6+4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.2
+  mobx_codegen: ^2.1.0
+
+# dependency_overrides:
+#   analyzer: ^5.2.0
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/img/
+    - assets/i18n/

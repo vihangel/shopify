@@ -1,0 +1,25 @@
+common:
+  locale: pt_BR
+  cancel: Cancelar
+  register: Cadastrar
+  continue: Continuar
+  confirm: Confirmar
+  buy: Comprar
+  update: Atualizar
+  close: Fechar
+  exit: Sair
+  search: Pesquisar
+  advance: Avançar
+  fail: Algo deu errado
+  errorLoad: Erro ao carregar as informações
+  errorToFind: Não foi possivel encontrar nenhum item
+home:
+  home: Inicio
+  favorites: Favoritos
+  notification: Notificações
+  profile: Perfil
+product:
+  rest: Restante
+  colors: Cores
+  quantity: Quantidade
+  success: Compra realizada com sucesso

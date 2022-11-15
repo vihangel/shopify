@@ -1,0 +1,17 @@
+common:
+  locale: en
+  buy: Buy
+  search: Search
+  fail: Something went wrong
+  errorLoad: Error loading information
+  errorToFind: Could not find any items
+home:
+  home: Home
+  favorites: Favorite
+  notification: Notification
+  profile: Profile
+product:
+  rest: Rest
+  colors: Colors
+  quantity: Quantity
+  success: Purchase made successfully
