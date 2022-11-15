@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: const Text("Shopfy Test",
+          title: const Text("Shopify Test",
               style: TextStyle(color: ShopfyColors.gray)),
           centerTitle: true,
           leading: IconButton(
