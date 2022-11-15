@@ -20,3 +20,13 @@
     <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />&nbsp;&nbsp;
 </p>
+<h2 align="center">Functionality 🔬</h2>
+<br>
+
+[x] - UI Screen - Home & Detail Card
+
+[x] - Search name
+
+[x] - Filter by tag
+
+[x] - Add quantity and select colors
