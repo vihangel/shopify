@@ -5,6 +5,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'package:shopify/screens/home/screens/product_detail.dart';
+import 'package:shopify/screens/home/widget/product_list.dart';
 import 'package:shopify/shared/utils/colors.dart';
 import 'package:shopify/shared/widgets/base_state.dart';
 
@@ -72,73 +73,7 @@ class _SearchScreenState extends BaseState<SearchScreen> {
                 ),
                 controller.products.isEmpty
                     ? Text(translate("common.errorToFind"))
-                    : GridView.builder(
-                        shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                mainAxisSpacing: 20,
-                                crossAxisSpacing: 20,
-                                childAspectRatio: 0.8),
-                        itemCount: controller.products.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return InkWell(
-                            onTap: () => Modular.to.push(MaterialPageRoute(
-                                builder: (context) => ProductDetail(
-                                      productDetail: controller.products[index],
-                                    ))),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: ShopfyColors.background,
-                                      borderRadius: BorderRadius.circular(10),
-                                      image: DecorationImage(
-                                        image: NetworkImage(
-                                            controller.products[index].image),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    child: Align(
-                                        alignment: Alignment.topRight,
-                                        child: Icon(
-                                          Random().nextBool()
-                                              ? Icons.favorite
-                                              : Icons.favorite_border_outlined,
-                                          color: ShopfyColors.red,
-                                        )),
-                                  ),
-                                ),
-                                Text(
-                                  controller.products[index].title,
-                                  style: TextStyles.titleCard,
-                                  textAlign: TextAlign.left,
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                        "\$${controller.products[index].price}",
-                                        style: TextStyles.priceCard),
-                                    Text(
-                                      "${controller.products[index].quantity}",
-                                      style: TextStyles.small.copyWith(
-                                          color: controller.products[index]
-                                                      .quantity <
-                                                  4
-                                              ? ShopfyColors.red
-                                              : ShopfyColors.gray),
-                                    )
-                                  ],
-                                ),
-                              ],
-                            ),
-                          );
-                        }),
+                    : ProductList(product: controller.products),
               ],
             ),
           ),
