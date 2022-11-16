@@ -17,7 +17,7 @@
 <a href="https://github.com/vihangel/shopify/blob/develop/assets/demo/demo.mp4">Link alternativo -> https://github.com/vihangel/shopify/blob/develop/assets/demo/demo.mp4</a>
 
 <br>
-<h2 align="center">Tecnologias 💻</h2>
+<h2 align="center">Tech 💻</h2>
 <br>
 <p align='center'>
     <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />&nbsp;&nbsp;
@@ -33,3 +33,5 @@
 [x] - Filter by tag
 
 [x] - Add quantity and select colors
+
+[x] - Internationalization
